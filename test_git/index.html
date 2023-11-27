@@ -1,20 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="./index.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  
+<!-- ------------- tính tiền lương--------------  -->
+  <div class="container">
+    <h2>Tinh tiền lương nhân viên </h2>
+    <div class="form-group">
+      <label for="tienPhaiTra">lương 1 ngày</label>
+      <input type="number"
+        class="form-control" name="" id="tienPhaiTra" aria-describedby="helpId"   placeholder="Vui lòng nhập số tiền lương 1 ngày">
+     
+    </div>
+    <div class="form-group">
+        <label for="tienDaTra">số ngày làm</label>
+        <input type="number"
+          class="form-control" name="" id="tienDaTra" aria-describedby="helpId"   placeholder="Vui lòng nhập số ngày làm">
+      </div>
+      <button class="btn btn-dark">tính tiền lương</button>
+      <div class="mt-2 bg-dark text-white p-3" id="ketQua"></div>
+  </div>
+
+ <!-- ------------tính trung bình ------------  -->
+
+  <div class="container mt-5">
+    <h2>Tính giá trị trung bình</h2>
+    <div class="form-group">
+      <label for="number1"></label>
+      <input type="number"
+        class="form-control" name="" id="number1" aria-describedby="helpId" placeholder="vui lòng nhập số thứ I">
+    </div>
+    <div class="form-group">
+      <label for="number2"></label>
+      <input type="number"
+        class="form-control" name="" id="number2" aria-describedby="helpId" placeholder="vui lòng nhập số thứ II">
+    </div>
+    <div class="form-group">
+      <label for="number3"></label>
+      <input type="number"
+        class="form-control" name="" id="number3" aria-describedby="helpId" placeholder="vui lòng nhập số thứ III">
+    </div>
+    <div class="form-group">
+      <label for="number4"></label>
+      <input type="number"
+        class="form-control" name="" id="number4" aria-describedby="helpId" placeholder="vui lòng nhập số thứ IV">
+    </div>
+    <div class="form-group">
+      <label for="number5"></label>
+      <input type="number"
+        class="form-control" name="" id="number5" aria-describedby="helpId" placeholder="vui lòng nhập số thứ V">
+    </div>
+    <button class="btn btn-primary" id="btn3">tính kết quả trung bình</button>
+      <div class="p-3 bg-primary text-white mt-4" id="ketQuaTB"></div>
+  </div>
+
+  <!-- ----------------- chuyển đô la ----------  -->
+
+  <div class="container mt-5">
+    <h2>Chuyển đô la sang VND</h2>
+    <div class="form-group">
+      <label for="">USD</label>
+      <input type="number"
+        class="form-control" name="" id="nhapTien" aria-describedby="helpId" placeholder="Vui lòng nhập số USD">
+    </div>
+    <button class="btn btn-dark mt-5" id="btn4">chuyển đổi sang VND</button>
+    <div class="p-3 bg-dark text-white mt-5" id="ketQuaC"></div>
+  </div>
+
+<!-- --------------- tính chu vi -------------  -->
+
+  <div class="container mt-5">
+    <h2>tính chu vi hinhc chữ nhật</h2>
+    <div class="form-group">
+      <label for="">chiều dài</label>
+      <input type="number"
+        class="form-control" name="" id="chieuDai" aria-describedby="helpId" placeholder="Vui lòng nhập chiều dài">
+    </div>
+    <div class="form-group">
+      <label for="">chiều rộng</label>
+      <input type="number"
+        class="form-control" name="" id="chieuRong" aria-describedby="helpId" placeholder="Vui lòng nhập chiều rộng">
+    </div>
+    <button class="btn btn-primary mt-5" id="btn5">tính chu vi</button>
+    <div class="p-3 bg-primary text-white mt-5" id="ketQuaChuVi"></div>
+  </div>
+
+  <!-- --------------- tính tổng 2 số -------------------   -->
+  <div class="container mt-5">
+    <h2>tính tổng hai số</h2>
+    <div class="form-group">
+      <label for=""></label>
+      <input type="number"
+        class="form-control" name="" id="soHaiChuSo" aria-describedby="helpId" placeholder="Vui lòng nhập số có hai chữ số">
+    </div>
+    <button class="btn btn-dark mt-5" id="btn6">tính tổng hai số</button>
+    <div class="p-3 bg-dark text-white mt-5" id="ketQuaTong"></div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
